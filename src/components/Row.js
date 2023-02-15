@@ -43,7 +43,9 @@ function Row(props) {
           const urlParams = new URLSearchParams(new URL(url).search);
           setTrailerUrl(urlParams.get("v"));
         })
-        .catch((error) => console.log(error));
+        .catch((error) => {
+          // console.log(error)
+        });
     }
   };
 
